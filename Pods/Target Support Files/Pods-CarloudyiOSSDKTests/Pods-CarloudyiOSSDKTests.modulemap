@@ -1,0 +1,6 @@
+framework module Pods_CarloudyiOSSDKTests {
+  umbrella header "Pods-CarloudyiOSSDKTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
