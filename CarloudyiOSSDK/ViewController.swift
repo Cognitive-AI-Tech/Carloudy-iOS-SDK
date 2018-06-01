@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     let carloudySpeech = CarloudySpeech()
     
     weak var timer_checkTextIfChanging : Timer?
-    var timer_forBaseSiri_inNavigationController = Timer()  ///检测mapbox导航是否正在说话
+    var timer_forBaseSiri_inNavigationController = Timer()  ///每0.5秒 检测说的什么
     var textReturnedFromSiri = ""
     
     @IBOutlet weak var pairButton: UIButton!
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sendButton: UIButton!
     @IBAction func sendButtonClicked(_ sender: Any) {
-        carloudyBLE.sendMessage(prefix: "10ns", message: textLabel.text!)
+        carloudyBLE.sendMessageForSplit(prefix: "ns", message: textLabel.text!)
     }
     
     @IBAction func gotoCarloudyClicked(_ sender: Any) {
@@ -47,8 +47,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
+    
+    
 }
 
 
