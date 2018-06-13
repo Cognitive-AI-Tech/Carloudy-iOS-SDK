@@ -77,6 +77,14 @@
                                     <action selector="siriButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlT-2B-hwn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW0-ws-2j7">
+                                <rect key="frame" x="31" y="304" width="168" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="send speed and address"/>
+                                <connections>
+                                    <action selector="sendSpeedAndAddressClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fs-mL-L5X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -89,8 +97,10 @@
                             <constraint firstItem="9Fs-zh-bqh" firstAttribute="top" secondItem="vvJ-jc-wIT" secondAttribute="bottom" constant="24" id="VaL-Xm-DJQ"/>
                             <constraint firstItem="9Fs-zh-bqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="Z1Q-NQ-fSv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BDS-kU-IDS" secondAttribute="trailing" constant="16" id="f6o-4u-pWZ"/>
+                            <constraint firstItem="wW0-ws-2j7" firstAttribute="top" secondItem="YPg-Y3-SLg" secondAttribute="bottom" constant="23" id="npv-eZ-xHJ"/>
                             <constraint firstItem="vvJ-jc-wIT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vpZ-ss-jLZ"/>
                             <constraint firstItem="vvJ-jc-wIT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w4x-zF-eyr"/>
+                            <constraint firstItem="wW0-ws-2j7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="x3U-mO-Xkp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Fs-zh-bqh" secondAttribute="trailing" constant="31" id="yYv-UG-4su"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -98,6 +108,7 @@
                     <connections>
                         <outlet property="pairButton" destination="vvJ-jc-wIT" id="Rf3-nY-7MP"/>
                         <outlet property="sendButton" destination="goV-s6-XVx" id="UDh-70-WD6"/>
+                        <outlet property="sendSpeedAndAddress" destination="wW0-ws-2j7" id="ppA-Un-dl9"/>
                         <outlet property="siriButton" destination="YPg-Y3-SLg" id="Jj5-vh-IA9"/>
                         <outlet property="textLabel" destination="9Fs-zh-bqh" id="Jae-yz-dJ8"/>
                     </connections>

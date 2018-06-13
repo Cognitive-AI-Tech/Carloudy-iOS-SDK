@@ -7,18 +7,25 @@
 //
 
 import UIKit
+import CoreLocation
 import CarloudyiOS
 
-class ViewController: UIViewController {
+
+
+class ViewController: UIViewController, CarloudyLocationDelegate {
     
-    let carloudyBLE = CarloudyBLE()
+    let carloudyBLE = CarloudyBLE.shareInstance
     let carloudySpeech = CarloudySpeech()
+    var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
     
     weak var timer_checkTextIfChanging : Timer?
     var timer_forBaseSiri_inNavigationController = Timer()  ///每0.5秒 检测说的什么
     var textReturnedFromSiri = ""
     
+    
+    
     @IBOutlet weak var pairButton: UIButton!
+    
     @IBAction func pairButtonClicked(_ sender: Any) {
         pairButton.isEnabled = false
         carloudyBLE.pairButtonClicked {[weak self] (pairKey) in
@@ -31,6 +38,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textLabel: UITextField!
     
     @IBOutlet weak var sendButton: UIButton!
+    
     @IBAction func sendButtonClicked(_ sender: Any) {
         carloudyBLE.sendMessageForSplit(prefix: "ns", message: textLabel.text!)
     }
@@ -44,10 +52,37 @@ class ViewController: UIViewController {
         siriButtonClicked()
     }
     
+    @IBOutlet weak var sendSpeedAndAddress: UIButton!
+    @IBAction func sendSpeedAndAddressClicked(_ sender: Any) {
+        if sendSpeedAndAddress.titleLabel?.text != "sending"{
+            
+            carloudyLocation.delegate = self
+            carloudyLocation.locationManager.requestAlwaysAuthorization()
+            carloudyLocation.locationManager.startUpdatingLocation()
+            sendSpeedAndAddress.setTitle("sending", for: .normal)
+        }else{
+            sendSpeedAndAddress.setTitle("sendSpeedAndAddress", for: .normal)
+            carloudyLocation.locationManager.stopUpdatingLocation()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    
+    func carloudyLocation(speed: CLLocationSpeed) {
+//        carloudyBLE.sendMessageForSplit(prefix: "sp", message: String(speed))
+        carloudyBLE.sendMessageForSplit(prefix: "sp", message: String(speed), highPriority: true, coverTheFront: false)
+    }
+    func carloudyLocation(locationName: String, street: String, city: String, zipCode: String, country: String) {
+        carloudyBLE.sendMessageForSplit(prefix: "ns", message: "\(locationName) \(street)")
+        print(locationName)
+        print("---------")
+        print(street)
+        print(city)
+        print(zipCode)
+        print(country)
+    }
     
 }
 
@@ -111,4 +146,5 @@ extension ViewController{
     }
     
 }
+
 

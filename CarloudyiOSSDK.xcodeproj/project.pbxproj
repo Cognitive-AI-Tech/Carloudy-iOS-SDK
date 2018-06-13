@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E04E9FB759654C5F5B39931 /* Pods_CarloudyiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1663D4AA8D45CEA1151AB1BF /* Pods_CarloudyiOSSDK.framework */; };
+		4E04E9FB759654C5F5B39931 /* Pods_CarloudyiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1663D4AA8D45CEA1151AB1BF /* Pods_CarloudyiOSSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A46591FF20D1A3D10033CCB2 /* mapstogpx20170927_194608.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A46591FE20D1A3D10033CCB2 /* mapstogpx20170927_194608.gpx */; };
+		A465920020D1B9970033CCB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD78120AA37B20029ABF0 /* ViewController.swift */; };
+		A465920320D1C3460033CCB2 /* CarloudyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A465920420D1C3460033CCB2 /* CarloudyiOS.framework */; };
+		A465920520D1C3BD0033CCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */; };
 		A49AD78020AA37B20029ABF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */; };
 		A49AD78220AA37B20029ABF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD78120AA37B20029ABF0 /* ViewController.swift */; };
 		A49AD78520AA37B20029ABF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49AD78320AA37B20029ABF0 /* Main.storyboard */; };
@@ -32,6 +36,9 @@
 		52BEE88521CEFCF7CC708405 /* Pods-CarloudyiOSSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarloudyiOSSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarloudyiOSSDKTests/Pods-CarloudyiOSSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A143F51EEAE8903D7F4983C /* Pods-CarloudyiOSSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarloudyiOSSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarloudyiOSSDK/Pods-CarloudyiOSSDK.release.xcconfig"; sourceTree = "<group>"; };
 		9377F4B22AF80CB070D21769 /* Pods-CarloudyiOSSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarloudyiOSSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarloudyiOSSDK/Pods-CarloudyiOSSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		A46591FE20D1A3D10033CCB2 /* mapstogpx20170927_194608.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mapstogpx20170927_194608.gpx; sourceTree = "<group>"; };
+		A465920420D1C3460033CCB2 /* CarloudyiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CarloudyiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46C4FE120C1DB4F00954329 /* CarloudyiOSSDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarloudyiOSSDK.entitlements; sourceTree = "<group>"; };
 		A49AD77C20AA37B20029ABF0 /* CarloudyiOSSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarloudyiOSSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49AD78120AA37B20029ABF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A465920320D1C3460033CCB2 /* CarloudyiOS.framework in Frameworks */,
 				4E04E9FB759654C5F5B39931 /* Pods_CarloudyiOSSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +77,7 @@
 		A49AD77320AA37B20029ABF0 = {
 			isa = PBXGroup;
 			children = (
+				A46591FE20D1A3D10033CCB2 /* mapstogpx20170927_194608.gpx */,
 				A49AD77E20AA37B20029ABF0 /* CarloudyiOSSDK */,
 				A49AD79320AA37B20029ABF0 /* CarloudyiOSSDKTests */,
 				A49AD77D20AA37B20029ABF0 /* Products */,
@@ -89,6 +98,7 @@
 		A49AD77E20AA37B20029ABF0 /* CarloudyiOSSDK */ = {
 			isa = PBXGroup;
 			children = (
+				A46C4FE120C1DB4F00954329 /* CarloudyiOSSDK.entitlements */,
 				A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */,
 				A49AD78120AA37B20029ABF0 /* ViewController.swift */,
 				A49AD78320AA37B20029ABF0 /* Main.storyboard */,
@@ -122,6 +132,7 @@
 		AFF0CD8B2ABA3C7F84750633 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A465920420D1C3460033CCB2 /* CarloudyiOS.framework */,
 				1663D4AA8D45CEA1151AB1BF /* Pods_CarloudyiOSSDK.framework */,
 				CACC9F94BD16B8A2598B5F6A /* Pods_CarloudyiOSSDKTests.framework */,
 			);
@@ -182,6 +193,11 @@
 					A49AD77B20AA37B20029ABF0 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					A49AD78F20AA37B20029ABF0 = {
 						CreatedOnToolsVersion = 9.2;
@@ -217,6 +233,7 @@
 				A49AD78A20AA37B20029ABF0 /* LaunchScreen.storyboard in Resources */,
 				A49AD78720AA37B20029ABF0 /* Assets.xcassets in Resources */,
 				A49AD78520AA37B20029ABF0 /* Main.storyboard in Resources */,
+				A46591FF20D1A3D10033CCB2 /* mapstogpx20170927_194608.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A465920520D1C3BD0033CCB2 /* AppDelegate.swift in Sources */,
+				A465920020D1B9970033CCB2 /* ViewController.swift in Sources */,
 				A49AD79520AA37B20029ABF0 /* CarloudyiOSSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
