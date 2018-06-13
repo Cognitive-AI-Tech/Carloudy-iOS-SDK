@@ -1,3 +1,3 @@
 # Carloudy-iOS-SDK
 
-pod 'CarloudyiOS', '1.02'
+pod 'CarloudyiOS', '1.04.2'
