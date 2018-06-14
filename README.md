@@ -23,8 +23,8 @@ To install Carloudy-iOS-SDK using [CocoaPods](https://cocoapods.org/):
 ## Requirements
 1. Get one [Carloudy HUD](http://www.carloudy.com/). (Android Side)
 1. Download iOS Carloudy app by following [the instruction](http://gettingstarted.carloudy.com/ios-platform), get an APIKey, and pair with Carloudy HUD.
-    - Resgiter Carloudy-iOS-SDK and ‘grab an APIKey’ with your app name, url scheme, and app icon image in iOS Carloudy app.
-    - Launtch iOS Carloudy app, find your app name, and click, which will jump into your app. That is how your app get the   ‘pair key with Android HUD’
+    - Resgiter Carloudy-iOS-SDK and **grab an APIKey** with your app name, url scheme, and app icon image in iOS Carloudy app.
+    - Launtch iOS Carloudy app, find your app name, and click, which will jump into your app. That is how your app get the   **pair key with Android HUD**
 1. You will be able to customize your app with connecting to Android HUD 
 
 ## Examples
