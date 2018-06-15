@@ -3,9 +3,9 @@
 ## Description
 This SDK allows a third-party developer to develop a third-party app `iOS-Swift` to use Carloudy HUD `Android` and display information customized by the developer.
 
-For developers who want Android SDK [click here](https://google.com) 
+For developers who want Android SDK ~~[click here](https://google.com) ~~
 
-For developers who want Carloudy HUD SDK [click here](https://google.com)
+For developers who want Carloudy HUD SDK ~~[click here](https://google.com)~~
 
 ## Features
 * Sending messages from iOS device to Android device. (iOS Side)
