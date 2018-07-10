@@ -26,6 +26,7 @@ To install Carloudy-iOS-SDK using [CocoaPods](https://cocoapods.org/):
 
 ```swift
 import CarloudyiOS
+import CoreLocation  //for CarloudyLocation
 ```
 ```swift
 let carloudyBLE = CarloudyBLE.shareInstance
@@ -35,11 +36,16 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
 
 ###### Class of CarloudyBle
    ```swift
-    open func sendMessageForSplit(prefix : String, message : String, highPriority : Bool = false, coverTheFront: Bool = false)
+   
     open func pairButtonClicked(finish: @escaping ((String)->()))
-    open func toCarloudyApp()
-    open func savePairKey()
+    //pair your app with Carloudy HUD
+    open func sendMessageForSplit(prefix : String, message : String, highPriority : Bool = false, coverTheFront: Bool = false)
+    // customize your own prefix and message string, and calling method of `sendMessageForSplit` will send message to Carloudy HUD
+    open func savePairKey()      
     open func getPairKey()
+    //Carloudy-iOS-SDK will save and get your pairKey automatically, which means you just need call `pairButtonClicked` once
+    open func toCarloudyApp()    
+    //This will jump to Carloudy iOS APP
    ```
 ###### Class of CarloudySpeech
    ```swift
