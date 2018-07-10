@@ -34,7 +34,7 @@ let carloudySpeech = CarloudySpeech()
 var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
 ```
 
-###### Class of CarloudyBle
+###### Class of CarloudyBLE
    ```swift
    
     open func pairButtonClicked(finish: @escaping ((String)->()))
