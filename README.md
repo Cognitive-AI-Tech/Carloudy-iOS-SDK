@@ -24,6 +24,38 @@ To install Carloudy-iOS-SDK using [CocoaPods](https://cocoapods.org/):
 
 1. Run `pod repo update && pod install` and open the resulting Xcode workspace.
 
+```swift
+import CarloudyiOS
+```
+```swift
+let carloudyBLE = CarloudyBLE.shareInstance
+let carloudySpeech = CarloudySpeech()
+var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
+```
+
+###### Class of CarloudyBle
+   ```swift
+    open func sendMessageForSplit(prefix : String, message : String, highPriority : Bool = false, coverTheFront: Bool = false)
+    open func pairButtonClicked(finish: @escaping ((String)->()))
+    open func toCarloudyApp()
+    open func savePairKey()
+    open func getPairKey()
+   ```
+###### Class of CarloudySpeech
+   ```swift
+   open func microphoneTapped()
+   open func endMicroPhone()
+   open func checkText() ->String
+   open func checkTextChanging() -> Bool
+   ```
+###### Class of CarloudyLocation
+   ```swift
+   public protocol CarloudyLocationDelegate {
+      func carloudyLocation(speed : CLLocationSpeed)
+      func carloudyLocation(locationName: String, street: String, city: String, zipCode: String, country: String)
+   }
+   ```
+
 ## Requirements
 1. Get one [Carloudy HUD](http://www.carloudy.com/). 
 1. Download iOS Carloudy app by following [the instruction](http://gettingstarted.carloudy.com/ios-platform), get an APIKey, and pair with Carloudy HUD.
