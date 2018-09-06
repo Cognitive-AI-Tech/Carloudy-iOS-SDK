@@ -39,8 +39,9 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
    
     open func pairButtonClicked(finish: @escaping ((String)->()))
     //pair your app with Carloudy HUD
-    open func sendMessageForSplit(prefix : String, message : String, highPriority : Bool = false, coverTheFront: Bool = false)
-    // customize your own prefix and message string, and calling method of `sendMessageForSplit` will send message to Carloudy HUD
+    open func startANewSession1(id: String)
+    open func createIDAndViewForCarloudyHud(id: String, labelTextSize: Int, postionX: Int, postionY: Int, width: Int, height: Int)
+    open func sendMessage(id: String, message : String)
     open func savePairKey()      
     open func getPairKey()
     //Carloudy-iOS-SDK will save and get your pairKey automatically, which means you just need call `pairButtonClicked` once
