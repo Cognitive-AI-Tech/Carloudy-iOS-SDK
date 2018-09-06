@@ -78,7 +78,7 @@ This repository also contains a sample program that exercise a variety of Carlou
 
 ## Contributing
 
-We welcome feedback and code contributions! Please see ??????? for details.
+We welcome feedback and code contributions! Please see [Notification Project.docx](./Notification Project.docx) for details.
 
 ## License
 
