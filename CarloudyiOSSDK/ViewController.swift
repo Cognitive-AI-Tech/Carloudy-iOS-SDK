@@ -31,8 +31,51 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
         carloudyBLE.pairButtonClicked {[weak self] (pairKey) in
             self?.pairButton.isEnabled = true
             self?.pairButton.setTitle("pair key : \(pairKey)", for: .normal)
-            self?.carloudyBLE.newKeySendToPairAndorid_ = "\(pairKey)1111111111"
         }
+    }
+    @IBAction func startNewSessionAndCreateView(_ sender: Any) {
+        carloudyBLE.startANewSession1(id: "a5ef3350")
+        carloudyBLE.createIDAndViewForCarloudyHud(id: "1", labelTextSize: 32, postionX: 36, postionY: 36, width: 42, height: 00)
+    }
+    
+    @IBAction func getWeatherButtonClicked(_ sender: Any) {
+        let str = "http://api.openweathermap.org/data/2.5/weather?lat=41.889249&lon=-87.630182&APPID=76d9dff8a633f10f3c5944948d84bd8b"
+        print(str)
+        let urlstr = URL(string: str)
+        _ = URLRequest(url: urlstr!)
+        let config = URLSessionConfiguration.default
+        config.requestCachePolicy = .reloadIgnoringLocalCacheData
+        config.urlCache = nil
+        let session = URLSession(configuration: config)
+        
+        session.dataTask(with: urlstr!) { (data, response, error) in
+            if error != nil{
+//                ZJPrint(message: error)
+                print(error)
+                return
+            }
+            if let result = String.init(data: data!, encoding: String.Encoding.utf8){
+                if let data = result.data(using: String.Encoding.utf8) {
+                    do {
+                        let resultDic = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                        if let weather : Array<Dictionary<String,AnyObject>> = resultDic!["weather"] as? Array<Dictionary<String,AnyObject>>{
+                            let weatherFirst : [String : AnyObject] = weather[0]
+                            if let main = weatherFirst["main"] as? String{
+                                DispatchQueue.main.async {
+                                    self.textLabel.text = main
+                                }
+                                
+                            }
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                    
+                }
+                
+            }
+            
+            }.resume()
     }
     
     @IBOutlet weak var textLabel: UITextField!
@@ -40,7 +83,9 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     @IBOutlet weak var sendButton: UIButton!
     
     @IBAction func sendButtonClicked(_ sender: Any) {
-        carloudyBLE.sendMessageForSplit(prefix: "ns", message: textLabel.text!)
+//        carloudyBLE.sendMessage(prefix: "ns", message: textLabel.text!)
+        print(textLabel.text)
+        carloudyBLE.sendMessage(id: "1", message: textLabel.text!)
     }
     
     @IBAction func gotoCarloudyClicked(_ sender: Any) {
@@ -71,11 +116,11 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     
     
     func carloudyLocation(speed: CLLocationSpeed) {
-//        carloudyBLE.sendMessageForSplit(prefix: "sp", message: String(speed))
-        carloudyBLE.sendMessageForSplit(prefix: "sp", message: String(speed), highPriority: true, coverTheFront: false)
+        carloudyBLE.sendMessage(id: "1", message: String(speed), highPriority: true, coverTheFront: false)
     }
+    
     func carloudyLocation(locationName: String, street: String, city: String, zipCode: String, country: String) {
-        carloudyBLE.sendMessageForSplit(prefix: "ns", message: "\(locationName) \(street)")
+        carloudyBLE.sendMessage(id: "1", message: "\(locationName) \(street)")
         print(locationName)
         print("---------")
         print(street)

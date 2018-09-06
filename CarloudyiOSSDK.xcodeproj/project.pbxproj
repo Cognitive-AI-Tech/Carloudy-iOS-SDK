@@ -10,7 +10,6 @@
 		4E04E9FB759654C5F5B39931 /* Pods_CarloudyiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1663D4AA8D45CEA1151AB1BF /* Pods_CarloudyiOSSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A46591FF20D1A3D10033CCB2 /* mapstogpx20170927_194608.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A46591FE20D1A3D10033CCB2 /* mapstogpx20170927_194608.gpx */; };
 		A465920020D1B9970033CCB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD78120AA37B20029ABF0 /* ViewController.swift */; };
-		A465920320D1C3460033CCB2 /* CarloudyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A465920420D1C3460033CCB2 /* CarloudyiOS.framework */; };
 		A465920520D1C3BD0033CCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */; };
 		A49AD78020AA37B20029ABF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */; };
 		A49AD78220AA37B20029ABF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD78120AA37B20029ABF0 /* ViewController.swift */; };
@@ -18,6 +17,7 @@
 		A49AD78720AA37B20029ABF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49AD78620AA37B20029ABF0 /* Assets.xcassets */; };
 		A49AD78A20AA37B20029ABF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49AD78820AA37B20029ABF0 /* LaunchScreen.storyboard */; };
 		A49AD79520AA37B20029ABF0 /* CarloudyiOSSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD79420AA37B20029ABF0 /* CarloudyiOSSDKTests.swift */; };
+		A4DA7B0821308F2B00D67954 /* CarloudyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DA7B0721308F2B00D67954 /* CarloudyiOS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E0DDFF7408AAA9C499ED8A19 /* Pods_CarloudyiOSSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACC9F94BD16B8A2598B5F6A /* Pods_CarloudyiOSSDKTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +49,7 @@
 		A49AD79020AA37B20029ABF0 /* CarloudyiOSSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarloudyiOSSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49AD79420AA37B20029ABF0 /* CarloudyiOSSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarloudyiOSSDKTests.swift; sourceTree = "<group>"; };
 		A49AD79620AA37B20029ABF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4DA7B0721308F2B00D67954 /* CarloudyiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CarloudyiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACC9F94BD16B8A2598B5F6A /* Pods_CarloudyiOSSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarloudyiOSSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31817E772E156CB34D2FDCC /* Pods-CarloudyiOSSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarloudyiOSSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarloudyiOSSDKTests/Pods-CarloudyiOSSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A465920320D1C3460033CCB2 /* CarloudyiOS.framework in Frameworks */,
+				A4DA7B0821308F2B00D67954 /* CarloudyiOS.framework in Frameworks */,
 				4E04E9FB759654C5F5B39931 /* Pods_CarloudyiOSSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +133,7 @@
 		AFF0CD8B2ABA3C7F84750633 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4DA7B0721308F2B00D67954 /* CarloudyiOS.framework */,
 				A465920420D1C3460033CCB2 /* CarloudyiOS.framework */,
 				1663D4AA8D45CEA1151AB1BF /* Pods_CarloudyiOSSDK.framework */,
 				CACC9F94BD16B8A2598B5F6A /* Pods_CarloudyiOSSDKTests.framework */,
@@ -150,7 +152,7 @@
 				A49AD77820AA37B20029ABF0 /* Sources */,
 				A49AD77920AA37B20029ABF0 /* Frameworks */,
 				A49AD77A20AA37B20029ABF0 /* Resources */,
-				EB32EFFF165267D2FEAED916 /* [CP] Embed Pods Frameworks */,
+				E0A19E642BFCF62B80C255BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,7 +267,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB32EFFF165267D2FEAED916 /* [CP] Embed Pods Frameworks */ = {
+		E0A19E642BFCF62B80C255BC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,11 +472,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJEC8LNQP8;
 				INFOPLIST_FILE = CarloudyiOSSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cognitiveAI.CarloudyiOSSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -486,11 +489,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJEC8LNQP8;
 				INFOPLIST_FILE = CarloudyiOSSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cognitiveAI.CarloudyiOSSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
