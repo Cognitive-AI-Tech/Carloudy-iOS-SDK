@@ -36,7 +36,7 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
     open func pairButtonClicked(finish: @escaping ((String)->()))
     //pair your app with Carloudy HUD
     open func startANewSession1(id: String)
-    //For more details about id, labelTextSize, postions, please see Notification Project.docx.
+    //For more details about format of id, labelTextSize, postions, please see Notification Project.docx.
     open func createIDAndViewForCarloudyHud(id: String, labelTextSize: Int, postionX: Int, postionY: Int, width: Int, height: Int)
     open func sendMessage(id: String, message : String)
     open func savePairKey()      
