@@ -3,10 +3,6 @@
 ## Description
 This SDK allows a third-party developer to develop a third-party app `iOS-Swift` to use Carloudy HUD `Android` and display information customized by the developer.
 
-For developers who want Android SDK ~~[click here](https://google.com)~~
-
-For developers who want Carloudy HUD SDK ~~[click here](https://google.com)~~
-
 ## Features
 * Sending messages from iOS device to Carloudy HUD.
 * Speech to text
@@ -40,6 +36,7 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
     open func pairButtonClicked(finish: @escaping ((String)->()))
     //pair your app with Carloudy HUD
     open func startANewSession1(id: String)
+    //For more details about id, labelTextSize, postions, please see Notification Project.docx.
     open func createIDAndViewForCarloudyHud(id: String, labelTextSize: Int, postionX: Int, postionY: Int, width: Int, height: Int)
     open func sendMessage(id: String, message : String)
     open func savePairKey()      
@@ -78,8 +75,8 @@ This repository also contains a sample program that exercise a variety of Carlou
 
 ## Contributing
 
-We welcome feedback and code contributions! Please see ??????? for details.
+We welcome feedback and code contributions! 
 
 ## License
 
-Carloudy-iOS-SDK is released under the ??????? License. See ??????? for details.
+
