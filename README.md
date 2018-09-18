@@ -15,7 +15,7 @@ This SDK allows a third-party developer to develop a third-party app `iOS-Swift`
 To install Carloudy-iOS-SDK using [CocoaPods](https://cocoapods.org/):
 1. Create a [Podfile](https://guides.cocoapods.org/syntax/podfile.html) with the following specification:
    ```ruby
-   pod 'CarloudyiOS', '1.04.3'
+   pod 'CarloudyiOS', '1.04.4'
    ```
 
 1. Run `pod repo update && pod install` and open the resulting Xcode workspace.
@@ -31,14 +31,15 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
 ```
 
 ###### Class of CarloudyBLE
+   For more details about format of id, picID, commandID, labelTextSize, postionsX,Y, width, height, please see Notification Project.docx.
    ```swift
    
     open func pairButtonClicked(finish: @escaping ((String)->()))
-    //pair your app with Carloudy HUD
     open func startANewSession1(id: String)
-    //For more details about format of id, labelTextSize, postions, please see Notification Project.docx.
     open func createIDAndViewForCarloudyHud(id: String, labelTextSize: Int, postionX: Int, postionY: Int, width: Int, height: Int)
+    open func createPictureIDAndImageViewForCarloudyHUD(picID: String, postionX: Int, postionY: Int, width: Int, height: Int)
     open func sendMessage(id: String, message : String)
+    open func sendAppCommand(commandID: String, AppID: String)
     open func savePairKey()      
     open func getPairKey()
     //Carloudy-iOS-SDK will save and get your pairKey automatically, which means you just need call `pairButtonClicked` once
