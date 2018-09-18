@@ -79,5 +79,10 @@ This repository also contains a sample program that exercise a variety of Carlou
 We welcome feedback and code contributions! 
 
 ## License
+## For submit images to Carloudy
+1. http://django-env.fwjwgc7qtw.us-west-2.elasticbeanstalk.com/
+1. go signup and login
+1. resgiter your app and get your app id
+1. go to home page and submit your images
 
 
