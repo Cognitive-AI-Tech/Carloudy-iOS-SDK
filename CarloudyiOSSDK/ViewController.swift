@@ -26,6 +26,7 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     
     @IBOutlet weak var pairButton: UIButton!
     
+
     @IBAction func pairButtonClicked(_ sender: Any) {
         pairButton.isEnabled = false
         carloudyBLE.pairButtonClicked {[weak self] (pairKey) in
@@ -86,6 +87,7 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
 //        carloudyBLE.sendMessage(prefix: "ns", message: textLabel.text!)
         print(textLabel.text)
         carloudyBLE.sendMessage(id: "1", message: textLabel.text!)
+
     }
     
     @IBAction func gotoCarloudyClicked(_ sender: Any) {
