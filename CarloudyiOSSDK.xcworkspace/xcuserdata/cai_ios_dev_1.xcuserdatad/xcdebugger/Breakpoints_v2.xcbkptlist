@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.536626"
+            timestampString = "561065422.720138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "getWeatherButtonClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,45 +26,109 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.5370491"
+            timestampString = "561065422.7207299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getWeatherButtonClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarloudyiOSSDK.ViewController.getWeatherButtonClicked(Any) -&gt; ()"
+                  moduleName = "CarloudyiOSSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
+                  timestampString = "561064664.922588"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CarloudyiOSSDK.ViewController.getWeatherButtonClicked(Any) -&gt; ()"
+                  moduleName = "CarloudyiOSSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
+                  timestampString = "561064664.924722"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarloudyiOSSDK/ViewController.swift"
+            timestampString = "561065422.7210439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getWeatherButtonClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarloudyiOSSDK.ViewController.getWeatherButtonClicked(Any) -&gt; ()"
+                  moduleName = "CarloudyiOSSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
+                  timestampString = "561064664.93032"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CarloudyiOSSDK.ViewController.getWeatherButtonClicked(Any) -&gt; ()"
+                  moduleName = "CarloudyiOSSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
+                  timestampString = "561064664.934685"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarloudyiOSSDK/ViewController.swift"
+            timestampString = "561065422.721341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
             landmarkName = "getWeatherButtonClicked(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CarloudyiOSSDK.ViewController.getWeatherButtonClicked(Any) -&gt; ()"
-                  moduleName = "CarloudyiOSSDK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
-                  timestampString = "557074170.288762"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "600">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CarloudyiOSSDK.ViewController.getWeatherButtonClicked(Any) -&gt; ()"
-                  moduleName = "CarloudyiOSSDK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
-                  timestampString = "557074170.290765"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,45 +138,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.537338"
+            timestampString = "561065422.721639"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
             landmarkName = "getWeatherButtonClicked(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CarloudyiOSSDK.ViewController.getWeatherButtonClicked(Any) -&gt; ()"
-                  moduleName = "CarloudyiOSSDK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
-                  timestampString = "557074170.29539"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "600">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CarloudyiOSSDK.ViewController.getWeatherButtonClicked(Any) -&gt; ()"
-                  moduleName = "CarloudyiOSSDK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
-                  timestampString = "557074170.297803"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -122,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.537591"
+            timestampString = "561065422.721934"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -138,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.537843"
+            timestampString = "561065422.722231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -154,71 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.538093"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "getWeatherButtonClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.538361"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "getWeatherButtonClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.538613"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "getWeatherButtonClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.538877"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "getWeatherButtonClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.5391099"
+            timestampString = "561065422.722545"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -234,11 +202,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "558994251.539342"
+            timestampString = "561065422.722847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "getWeatherButtonClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarloudyiOSSDK/ViewController.swift"
+            timestampString = "561065422.7231621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "getWeatherButtonClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
-            timestampString = "558993167.784716"
+            timestampString = "561065422.72346"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -266,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
-            timestampString = "558993167.784768"
+            timestampString = "561065422.723515"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"

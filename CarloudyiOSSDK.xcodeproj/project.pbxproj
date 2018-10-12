@@ -38,7 +38,6 @@
 		9377F4B22AF80CB070D21769 /* Pods-CarloudyiOSSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarloudyiOSSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarloudyiOSSDK/Pods-CarloudyiOSSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		A46591FE20D1A3D10033CCB2 /* mapstogpx20170927_194608.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mapstogpx20170927_194608.gpx; sourceTree = "<group>"; };
 		A465920420D1C3460033CCB2 /* CarloudyiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CarloudyiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A46C4FE120C1DB4F00954329 /* CarloudyiOSSDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarloudyiOSSDK.entitlements; sourceTree = "<group>"; };
 		A49AD77C20AA37B20029ABF0 /* CarloudyiOSSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarloudyiOSSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49AD78120AA37B20029ABF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +98,6 @@
 		A49AD77E20AA37B20029ABF0 /* CarloudyiOSSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A46C4FE120C1DB4F00954329 /* CarloudyiOSSDK.entitlements */,
 				A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */,
 				A49AD78120AA37B20029ABF0 /* ViewController.swift */,
 				A49AD78320AA37B20029ABF0 /* Main.storyboard */,
@@ -197,6 +195,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
 								enabled = 0;
 							};
 						};

@@ -1,10 +1,10 @@
 PODS:
-  - CarloudyiOS (1.04.4):
+  - CarloudyiOS (1.04.5):
     - CryptoSwift (= 0.8.0)
   - CryptoSwift (0.8.0)
 
 DEPENDENCIES:
-  - CarloudyiOS (= 1.04.4)
+  - CarloudyiOS (= 1.04.5)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - CryptoSwift
 
 SPEC CHECKSUMS:
-  CarloudyiOS: 949502c669fa780446fe5f94ef85d4d8add173f1
+  CarloudyiOS: 7de3fbdab08d726737f24cce1dd0e83fb1047bc5
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
 
-PODFILE CHECKSUM: bb4b4d318910a94da99a51273476801091673bb5
+PODFILE CHECKSUM: 322c0abc97a15eede91080e99c07908d0d3d0a37
 
 COCOAPODS: 1.5.0

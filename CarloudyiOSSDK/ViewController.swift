@@ -22,11 +22,7 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     var timer_forBaseSiri_inNavigationController = Timer()  ///每0.5秒 检测说的什么
     var textReturnedFromSiri = ""
     
-    
-    
     @IBOutlet weak var pairButton: UIButton!
-    
-
     @IBAction func pairButtonClicked(_ sender: Any) {
         pairButton.isEnabled = false
         carloudyBLE.pairButtonClicked {[weak self] (pairKey) in
@@ -34,9 +30,11 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
             self?.pairButton.setTitle("pair key : \(pairKey)", for: .normal)
         }
     }
+    
     @IBAction func startNewSessionAndCreateView(_ sender: Any) {
-        carloudyBLE.startANewSession1(id: "a5ef3350")
-        carloudyBLE.createIDAndViewForCarloudyHud(id: "1", labelTextSize: 32, postionX: 36, postionY: 36, width: 42, height: 00)
+        // register your app and get your appId at betastore.carloudy.com
+        carloudyBLE.startANewSession(appId: "a5ef3350")
+        carloudyBLE.createIDAndViewForCarloudyHud(textViewId: "1", labelTextSize: 32, postionX: 36, postionY: 36, width: 42, height: 00)
     }
     
     @IBAction func getWeatherButtonClicked(_ sender: Any) {
@@ -51,7 +49,6 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
         
         session.dataTask(with: urlstr!) { (data, response, error) in
             if error != nil{
-//                ZJPrint(message: error)
                 print(error)
                 return
             }
@@ -65,17 +62,13 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
                                 DispatchQueue.main.async {
                                     self.textLabel.text = main
                                 }
-                                
                             }
                         }
                     } catch {
                         print(error.localizedDescription)
                     }
-                    
                 }
-                
             }
-            
             }.resume()
     }
     
@@ -84,10 +77,7 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     @IBOutlet weak var sendButton: UIButton!
     
     @IBAction func sendButtonClicked(_ sender: Any) {
-//        carloudyBLE.sendMessage(prefix: "ns", message: textLabel.text!)
-        print(textLabel.text)
-        carloudyBLE.sendMessage(id: "1", message: textLabel.text!)
-
+        carloudyBLE.sendMessage(textViewId: "1", message: textLabel.text!)
     }
     
     @IBAction func gotoCarloudyClicked(_ sender: Any) {
@@ -112,17 +102,17 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
             carloudyLocation.locationManager.stopUpdatingLocation()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
     func carloudyLocation(speed: CLLocationSpeed) {
-        carloudyBLE.sendMessage(id: "1", message: String(speed), highPriority: true, coverTheFront: false)
+        carloudyBLE.sendMessage(textViewId: "1", message: String(speed), highPriority: true, coverTheFront: false)
     }
     
     func carloudyLocation(locationName: String, street: String, city: String, zipCode: String, country: String) {
-        carloudyBLE.sendMessage(id: "1", message: "\(locationName) \(street)")
+        carloudyBLE.sendMessage(textViewId: "1", message: "\(locationName) \(street)")
         print(locationName)
         print("---------")
         print(street)
@@ -134,9 +124,7 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
 }
 
 
-
 ///do siri stuff
-
 extension ViewController{
     
     func siriButtonClicked(){
@@ -184,7 +172,6 @@ extension ViewController{
         })
         RunLoop.current.add(timer_forBaseSiri_inNavigationController, forMode: .commonModes)
     }
-    
     
     @objc func checkTextIsChanging(){
         guard carloudySpeech.checkTextChanging() == false else {return}
