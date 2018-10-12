@@ -34,7 +34,7 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
    1. **appId**: (8) provided by Carloudy after user registered account(register your app and get appId at http://betastore.carloudy.com). Will define folders and start a new session belongs to the specific app.
    1. **textViewId**: (1) [0-9, a-z] ex:0, 5, c, or x. User defined display section id for distinguishing among other display sections
    1. **picId**: (2) [0-9, a-z] ex:2c, x5, 80, or az. Unique id for picture to display. **The picId must be the same as the picture name uploaded by the user** at http://betastore.carloudy.com/details
-   1. For more details about format of appId, textViewId, picID, commandID, labelTextSize, postionsX,Y, width, height, please see Notification Project.docx.
+   1. For more details about format of appId, textViewId, picID, commandID, labelTextSize, postionsX,Y, width, height, please see `Notification Project.docx`.
    ```swift
    
     open func pairButtonClicked(finish: @escaping ((String)->()))
@@ -86,6 +86,6 @@ We welcome feedback and code contributions!
 1. http://betastore.carloudy.com
 1. go signup and login
 1. resgiter your app and get your app id
-1. go to home page and submit your images
+1. submit your images
 
 
