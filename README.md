@@ -15,7 +15,7 @@ This SDK allows a third-party developer to develop a third-party app `iOS-Swift`
 To install Carloudy-iOS-SDK using [CocoaPods](https://cocoapods.org/):
 1. Create a [Podfile](https://guides.cocoapods.org/syntax/podfile.html) with the following specification:
    ```ruby
-   pod 'CarloudyiOS', '1.04.4'
+   pod 'CarloudyiOS', '1.04.5'
    ```
 
 1. Run `pod repo update && pod install` and open the resulting Xcode workspace.
@@ -31,14 +31,17 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
 ```
 
 ###### Class of CarloudyBLE
-   For more details about format of id, picID, commandID, labelTextSize, postionsX,Y, width, height, please see Notification Project.docx.
+   1. appId: (8) provided by Carloudy after user registered account(register your app and get appId at http://betastore.carloudy.com). Will define folders and start a new session belongs to the specific app.
+   1. textViewId: (1) [0-9, a-z]: User defined display section id for distinguishing among other display sections
+   1. picId: unique id for picture to display. The “pic_id” must be the same as the picture name uploaded by the user at http://betastore.carloudy.com/details
+   1. For more details about format of appId, textViewId, picID, commandID, labelTextSize, postionsX,Y, width, height, please see Notification Project.docx.
    ```swift
    
     open func pairButtonClicked(finish: @escaping ((String)->()))
-    open func startANewSession1(id: String)
-    open func createIDAndViewForCarloudyHud(id: String, labelTextSize: Int, postionX: Int, postionY: Int, width: Int, height: Int)
+    open func startANewSession(appId: String)
+    open func createIDAndViewForCarloudyHud(textViewId: String, labelTextSize: Int, postionX: Int, postionY: Int, width: Int, height: Int)
     open func createPictureIDAndImageViewForCarloudyHUD(picID: String, postionX: Int, postionY: Int, width: Int, height: Int)
-    open func sendMessage(id: String, message : String)
+    open func sendMessage(textViewId: String, message : String)
     open func sendAppCommand(commandID: String, AppID: String)
     open func savePairKey()      
     open func getPairKey()
