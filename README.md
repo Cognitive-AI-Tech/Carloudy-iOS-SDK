@@ -67,7 +67,7 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
 1. Get one [Carloudy HUD](http://www.carloudy.com/). 
 1. Create your own app with Carloudy-iOS-SDK installed, get an APIKey, and pair with Carloudy HUD.
     - Install Carloudy-iOS-SDK by cocoapods
-    - Resgiter and grab an APIID with your app name at http://betastore.carloudy.com.
+    - Resgiter and grab an APPID with your app name at http://betastore.carloudy.com.
     - Pair your app with Carloudy HUD by Carloudy-iOS-SDK function.
 1. You will be able to customize your app with connecting to Carloudy HUD 
 
