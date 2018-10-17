@@ -10,8 +10,7 @@ This SDK allows a third-party developer to develop a third-party app `iOS-Swift`
 
 ## Installation
 
-### Using CocoaPods
-
+### [CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 To install Carloudy-iOS-SDK using [CocoaPods](https://cocoapods.org/):
 1. Create a [Podfile](https://guides.cocoapods.org/syntax/podfile.html) with the following specification:
    ```ruby
