@@ -10,12 +10,11 @@ This SDK allows a third-party developer to develop a third-party app `iOS-Swift`
 
 ## Installation
 
-### Using CocoaPods
-
+### [CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 To install Carloudy-iOS-SDK using [CocoaPods](https://cocoapods.org/):
 1. Create a [Podfile](https://guides.cocoapods.org/syntax/podfile.html) with the following specification:
    ```ruby
-   pod 'CarloudyiOS', '1.04.4'
+   pod 'CarloudyiOS', '1.04.5'
    ```
 
 1. Run `pod repo update && pod install` and open the resulting Xcode workspace.
@@ -31,14 +30,17 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
 ```
 
 ###### Class of CarloudyBLE
-   For more details about format of id, picID, commandID, labelTextSize, postionsX,Y, width, height, please see Notification Project.docx.
+   1. **appId**: (8) provided by Carloudy after user registered account(register your app and get appId at http://betastore.carloudy.com). Will define folders and start a new session belongs to the specific app.
+   1. **textViewId**: (1) [0-9, a-z] ex:0, 5, c, or x. User defined display section id for distinguishing among other display sections
+   1. **picId**: (2) [0-9, a-z] ex:2c, x5, 80, or az. Unique id for picture to display. **The picId must be the same as the picture name uploaded by the user** at http://betastore.carloudy.com/details
+   1. For more details about format of appId, textViewId, picID, commandID, labelTextSize, postionsX,Y, width, height, please see `Notification Project.docx`.
    ```swift
    
     open func pairButtonClicked(finish: @escaping ((String)->()))
-    open func startANewSession1(id: String)
-    open func createIDAndViewForCarloudyHud(id: String, labelTextSize: Int, postionX: Int, postionY: Int, width: Int, height: Int)
+    open func startANewSession(appId: String)
+    open func createIDAndViewForCarloudyHud(textViewId: String, labelTextSize: Int, postionX: Int, postionY: Int, width: Int, height: Int)
     open func createPictureIDAndImageViewForCarloudyHUD(picID: String, postionX: Int, postionY: Int, width: Int, height: Int)
-    open func sendMessage(id: String, message : String)
+    open func sendMessage(textViewId: String, message : String)
     open func sendAppCommand(commandID: String, AppID: String)
     open func savePairKey()      
     open func getPairKey()
@@ -63,9 +65,10 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
 
 ## Requirements
 1. Get one [Carloudy HUD](http://www.carloudy.com/). 
-1. Download iOS Carloudy app by following [the instruction](http://gettingstarted.carloudy.com/ios-platform), get an APIKey, and pair with Carloudy HUD.
-    - Resgiter Carloudy-iOS-SDK and **grab an APIKey** with your app name, url scheme, and app icon image in iOS Carloudy app.
-    - Launtch iOS Carloudy app, find your app name, and click, which will jump into your app. That is how your app get the   **pair key with Carloudy HUD**
+1. Create your own app with Carloudy-iOS-SDK installed, get an APIKey, and pair with Carloudy HUD.
+    - Install Carloudy-iOS-SDK by cocoapods
+    - Resgiter and grab an APPID with your app name at http://betastore.carloudy.com.
+    - Pair your app with Carloudy HUD by Carloudy-iOS-SDK function.
 1. You will be able to customize your app with connecting to Carloudy HUD 
 
 ## Examples
@@ -79,10 +82,13 @@ This repository also contains a sample program that exercise a variety of Carlou
 We welcome feedback and code contributions! 
 
 ## License
-## For submit images to Carloudy
+## submit images to Server
 1. http://betastore.carloudy.com
 1. go signup and login
 1. resgiter your app and get your app id
-1. go to home page and submit your images
+1. submit your images
+
+## review images in Carloudy
+1. https://github.com/Cognitive-AI-Tech/Carloudy-iOS-SDK/blob/master/Images%20Review%20Instruction.pdf
 
 
