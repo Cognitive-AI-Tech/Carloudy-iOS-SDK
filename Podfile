@@ -5,7 +5,7 @@ target 'CarloudyiOSSDK' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'CarloudyiOS', '1.04.5'
+pod 'CarloudyiOS', '1.05'
   # Pods for CarloudyiOSSDK
 
   target 'CarloudyiOSSDKTests' do

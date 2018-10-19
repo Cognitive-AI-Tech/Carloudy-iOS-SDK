@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91C2A5D515573AEBFA1081B7FBB3E291"
+               BlueprintIdentifier = "35745B6E1B73DB464121B4C42D657D11"
                BlueprintName = "CarloudyiOS"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "CarloudyiOS.framework">

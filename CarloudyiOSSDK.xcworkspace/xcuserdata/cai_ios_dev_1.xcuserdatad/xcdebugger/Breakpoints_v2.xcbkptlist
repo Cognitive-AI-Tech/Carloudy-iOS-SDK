@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.720138"
+            timestampString = "561675795.361449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.7207299"
+            timestampString = "561675795.362045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -42,11 +42,11 @@
                   moduleName = "CarloudyiOSSDK"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
-                  timestampString = "561064664.922588"
+                  timestampString = "561673016.917761"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
                   offsetFromSymbolStart = "632">
                </Location>
                <Location
@@ -57,11 +57,11 @@
                   moduleName = "CarloudyiOSSDK"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
-                  timestampString = "561064664.924722"
+                  timestampString = "561673016.9220541"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
                   offsetFromSymbolStart = "68">
                </Location>
             </Locations>
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.7210439"
+            timestampString = "561675795.362344"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -90,11 +90,11 @@
                   moduleName = "CarloudyiOSSDK"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
-                  timestampString = "561064664.93032"
+                  timestampString = "561673016.93309"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
                   offsetFromSymbolStart = "632">
                </Location>
                <Location
@@ -105,11 +105,11 @@
                   moduleName = "CarloudyiOSSDK"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/CarloudyiOSSDK/ViewController.swift"
-                  timestampString = "561064664.934685"
+                  timestampString = "561673016.936846"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
                   offsetFromSymbolStart = "68">
                </Location>
             </Locations>
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.721341"
+            timestampString = "561675795.362627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.721639"
+            timestampString = "561675795.362914"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.721934"
+            timestampString = "561675795.363198"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.722231"
+            timestampString = "561675795.363505"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.722545"
+            timestampString = "561675795.36379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -202,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.722847"
+            timestampString = "561675795.3640831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -218,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CarloudyiOSSDK/ViewController.swift"
-            timestampString = "561065422.7231621"
+            timestampString = "561675795.364339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -233,13 +233,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
-            timestampString = "561065422.72346"
+            filePath = "CarloudyiOSSDK/ViewController.swift"
+            timestampString = "561675795.3645951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "twoletters(number:)"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
+            timestampString = "561673289.8820699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "alertViewToUpdateImagesFromServer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -250,12 +266,108 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
-            timestampString = "561065422.723515"
+            timestampString = "561673289.882604"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "twoletters(number:)"
+            startingLineNumber = "319"
+            endingLineNumber = "319"
+            landmarkName = "alertViewToUpdateImagesFromServer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
+            timestampString = "561673289.882957"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
+            landmarkName = "alertViewToUpdateImagesFromServer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
+            timestampString = "561673289.8832951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
+            landmarkName = "alertViewToUpdateImagesFromServer()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarloudyiOS.CarloudyBLE.alertViewToUpdateImagesFromServer() -&gt; ()"
+                  moduleName = "CarloudyiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
+                  timestampString = "561673017.663317"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "313"
+                  endingLineNumber = "313"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__C.UIAlertAction) -&gt; () in CarloudyiOS.CarloudyBLE.alertViewToUpdateImagesFromServer() -&gt; ()"
+                  moduleName = "CarloudyiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cai_ios_dev_1/Desktop/Carloudy-iOS-SDK/Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
+                  timestampString = "561673017.666223"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "313"
+                  endingLineNumber = "313"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
+            timestampString = "561673289.883634"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "alertViewToUpdateImagesFromServer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CarloudyiOS/CarloudyiOS/CarloudyBLE.swift"
+            timestampString = "561673289.883971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "alertViewToUpdateImagesFromServer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

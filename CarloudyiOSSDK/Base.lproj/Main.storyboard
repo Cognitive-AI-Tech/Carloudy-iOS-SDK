@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -106,6 +106,15 @@
                                     <action selector="startNewSessionAndCreateView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V6u-IG-WUN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKn-L3-udY">
+                                <rect key="frame" x="20" y="147" width="67" height="23"/>
+                                <color key="backgroundColor" red="1" green="0.53978096350000004" blue="0.24072938890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <state key="normal" title="Update Images"/>
+                                <connections>
+                                    <action selector="updataImagesFromServerButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3HG-tR-HlA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -122,11 +131,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BDS-kU-IDS" secondAttribute="trailing" constant="16" id="f6o-4u-pWZ"/>
                             <constraint firstItem="goV-s6-XVx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hqY-Bd-Pm6"/>
                             <constraint firstItem="wW0-ws-2j7" firstAttribute="top" secondItem="YPg-Y3-SLg" secondAttribute="bottom" constant="23" id="npv-eZ-xHJ"/>
+                            <constraint firstItem="iKn-L3-udY" firstAttribute="leading" secondItem="oLK-6Q-Sk5" secondAttribute="leading" id="pjI-v2-wIv"/>
                             <constraint firstItem="oLK-6Q-Sk5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rEg-8e-qNd"/>
                             <constraint firstItem="vvJ-jc-wIT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vpZ-ss-jLZ"/>
                             <constraint firstItem="vvJ-jc-wIT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w4x-zF-eyr"/>
                             <constraint firstItem="wW0-ws-2j7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="x3U-mO-Xkp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Fs-zh-bqh" secondAttribute="trailing" constant="31" id="yYv-UG-4su"/>
+                            <constraint firstItem="iKn-L3-udY" firstAttribute="top" secondItem="oLK-6Q-Sk5" secondAttribute="bottom" constant="8" id="yod-IB-aJz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

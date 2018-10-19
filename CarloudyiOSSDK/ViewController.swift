@@ -81,6 +81,7 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     }
     
     @IBAction func gotoCarloudyClicked(_ sender: Any) {
+
         carloudyBLE.toCarloudyApp()
     }
     
@@ -101,6 +102,9 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
             sendSpeedAndAddress.setTitle("sendSpeedAndAddress", for: .normal)
             carloudyLocation.locationManager.stopUpdatingLocation()
         }
+    }
+    @IBAction func updataImagesFromServerButtonClicked(_ sender: Any) {
+        carloudyBLE.alertViewToUpdateImagesFromServer()
     }
     
     override func viewDidLoad() {
