@@ -47,6 +47,8 @@ var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
     //Carloudy-iOS-SDK will save and get your pairKey automatically, which means you just need call `pairButtonClicked` once
     open func toCarloudyApp()    
     //This will jump to Carloudy iOS APP
+    open func alertViewToUpdateImagesFromServer()
+    //This will prompt developers/users to enter wifi&password to update images in Carloudy from server-side
    ```
 ###### Class of CarloudySpeech
    ```swift
