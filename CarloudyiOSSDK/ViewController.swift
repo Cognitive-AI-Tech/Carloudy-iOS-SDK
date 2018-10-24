@@ -33,8 +33,9 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     
     @IBAction func startNewSessionAndCreateView(_ sender: Any) {
         // register your app and get your appId at betastore.carloudy.com
-        carloudyBLE.startANewSession(appId: "a5ef3350")
+        carloudyBLE.startANewSession(appId: "qtr4e52i")
         carloudyBLE.createIDAndViewForCarloudyHud(textViewId: "1", labelTextSize: 32, postionX: 36, postionY: 36, width: 42, height: 00)
+        
     }
     
     @IBAction func getWeatherButtonClicked(_ sender: Any) {
@@ -78,6 +79,7 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     
     @IBAction func sendButtonClicked(_ sender: Any) {
         carloudyBLE.sendMessage(textViewId: "1", message: textLabel.text!)
+        carloudyBLE.createPictureIDAndImageViewForCarloudyHUD(picID: "a6", postionX: 00, postionY: 00, width: 00, height: 00)
     }
     
     @IBAction func gotoCarloudyClicked(_ sender: Any) {
