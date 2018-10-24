@@ -90,7 +90,7 @@ We welcome feedback and code contributions!
 1. resgiter your app and get your app id
 1. submit your images
 
-## review images in Carloudy
+## review images in Carloudy Doc
 1. https://github.com/Cognitive-AI-Tech/Carloudy-iOS-SDK/blob/master/Images%20Review%20Instruction.pdf
 
 
