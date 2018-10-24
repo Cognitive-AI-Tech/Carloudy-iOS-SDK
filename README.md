@@ -91,6 +91,6 @@ We welcome feedback and code contributions!
 1. submit your images
 
 ## review images in Carloudy Doc
-1. https://github.com/Cognitive-AI-Tech/Carloudy-iOS-SDK/blob/master/Images%20Review%20Instruction.pdf
+1. https://github.com/Cognitive-AI-Tech/Carloudy-iOS-SDK/blob/master/Images%20Download%20Guide%20for%20iOS.pdf
 
 
