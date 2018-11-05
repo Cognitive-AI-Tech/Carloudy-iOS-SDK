@@ -92,5 +92,8 @@ We welcome feedback and code contributions!
 
 ## review images in Carloudy Doc
 1. https://github.com/Cognitive-AI-Tech/Carloudy-iOS-SDK/blob/master/Images%20Download%20Guide%20for%20iOS.pdf
+1. Sending Wifi and Password to Carloudy by calling method: carloudyBLE.alertViewToUpdateImagesFromServer()
+1. Sending AppID to Carloudy by calling method: carloudyBLE.startANewSession(appId: "xxxxxxxx")
+
 
 
