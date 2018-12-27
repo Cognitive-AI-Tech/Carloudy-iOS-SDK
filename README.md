@@ -14,7 +14,7 @@ This SDK allows a third-party developer to develop a third-party app `iOS-Swift`
 To install Carloudy-iOS-SDK using [CocoaPods](https://cocoapods.org/):
 1. Create a [Podfile](https://guides.cocoapods.org/syntax/podfile.html) with the following specification:
    ```ruby
-   pod 'CarloudyiOS', '1.05'
+   pod 'CarloudyiOS', '1.07'
    ```
 
 1. Run `pod repo update && pod install` and open the resulting Xcode workspace.
@@ -92,5 +92,8 @@ We welcome feedback and code contributions!
 
 ## review images in Carloudy Doc
 1. https://github.com/Cognitive-AI-Tech/Carloudy-iOS-SDK/blob/master/Images%20Download%20Guide%20for%20iOS.pdf
+1. Sending Wifi and Password to Carloudy by calling method: `carloudyBLE.alertViewToUpdateImagesFromServer()`
+1. Sending AppID to Carloudy by calling method: `carloudyBLE.startANewSession(appId: "xxxxxxxx")`
+
 
 
