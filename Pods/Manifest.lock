@@ -1,20 +1,24 @@
 PODS:
-  - CarloudyiOS (1.06):
+  - CarloudyiOS (1.07):
     - CryptoSwift (= 0.8.0)
   - CryptoSwift (0.8.0)
+  - Popover (1.2.2)
 
 DEPENDENCIES:
-  - CarloudyiOS (= 1.06)
+  - CarloudyiOS (= 1.07)
+  - Popover
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - CarloudyiOS
     - CryptoSwift
+    - Popover
 
 SPEC CHECKSUMS:
-  CarloudyiOS: b90addce0a6f7129b90d00d5d3b4b6830c7e3c88
+  CarloudyiOS: 20bd0364ba717615d27b366bc102d1e24ce6aadf
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
+  Popover: 21e357f86d45c8d9e29a41a4adbca3664d6e511f
 
-PODFILE CHECKSUM: 9e9a4e2a362b18a1a0949df433ed2bb189266a25
+PODFILE CHECKSUM: 07cbc51379279dd740c5aeffc98d5f91f87f7fc1
 
 COCOAPODS: 1.5.0

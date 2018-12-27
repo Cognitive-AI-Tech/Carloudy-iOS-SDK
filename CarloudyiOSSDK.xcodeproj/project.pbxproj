@@ -17,6 +17,8 @@
 		A49AD78720AA37B20029ABF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49AD78620AA37B20029ABF0 /* Assets.xcassets */; };
 		A49AD78A20AA37B20029ABF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49AD78820AA37B20029ABF0 /* LaunchScreen.storyboard */; };
 		A49AD79520AA37B20029ABF0 /* CarloudyiOSSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49AD79420AA37B20029ABF0 /* CarloudyiOSSDKTests.swift */; };
+		A4C080D221D5623D00E2216A /* UpdateImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C080D121D5623D00E2216A /* UpdateImagesViewController.swift */; };
+		A4C080D421D56C4700E2216A /* Siri.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C080D321D56C4700E2216A /* Siri.swift */; };
 		A4DA7B0821308F2B00D67954 /* CarloudyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DA7B0721308F2B00D67954 /* CarloudyiOS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E0DDFF7408AAA9C499ED8A19 /* Pods_CarloudyiOSSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACC9F94BD16B8A2598B5F6A /* Pods_CarloudyiOSSDKTests.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,8 @@
 		A49AD79020AA37B20029ABF0 /* CarloudyiOSSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarloudyiOSSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49AD79420AA37B20029ABF0 /* CarloudyiOSSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarloudyiOSSDKTests.swift; sourceTree = "<group>"; };
 		A49AD79620AA37B20029ABF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C080D121D5623D00E2216A /* UpdateImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateImagesViewController.swift; sourceTree = "<group>"; };
+		A4C080D321D56C4700E2216A /* Siri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siri.swift; sourceTree = "<group>"; };
 		A4DA7B0721308F2B00D67954 /* CarloudyiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CarloudyiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACC9F94BD16B8A2598B5F6A /* Pods_CarloudyiOSSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarloudyiOSSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31817E772E156CB34D2FDCC /* Pods-CarloudyiOSSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarloudyiOSSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarloudyiOSSDKTests/Pods-CarloudyiOSSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				A49852BE217A70F400C49E84 /* CarloudyiOSSDK.entitlements */,
 				A49AD77F20AA37B20029ABF0 /* AppDelegate.swift */,
 				A49AD78120AA37B20029ABF0 /* ViewController.swift */,
+				A4C080D121D5623D00E2216A /* UpdateImagesViewController.swift */,
+				A4C080D321D56C4700E2216A /* Siri.swift */,
 				A49AD78320AA37B20029ABF0 /* Main.storyboard */,
 				A49AD78620AA37B20029ABF0 /* Assets.xcassets */,
 				A49AD78820AA37B20029ABF0 /* LaunchScreen.storyboard */,
@@ -205,6 +211,9 @@
 							com.apple.HealthKit = {
 								enabled = 0;
 							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
 						};
 					};
 					A49AD78F20AA37B20029ABF0 = {
@@ -264,11 +273,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CarloudyiOSSDK/Pods-CarloudyiOSSDK-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CarloudyiOS/CarloudyiOS.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Popover/Popover.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CarloudyiOS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Popover.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -318,8 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C080D421D56C4700E2216A /* Siri.swift in Sources */,
 				A49AD78220AA37B20029ABF0 /* ViewController.swift in Sources */,
 				A49AD78020AA37B20029ABF0 /* AppDelegate.swift in Sources */,
+				A4C080D221D5623D00E2216A /* UpdateImagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

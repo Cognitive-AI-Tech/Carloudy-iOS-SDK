@@ -320,7 +320,6 @@ extension CarloudyBLE{
             }
             self.sendMessageForSplit(prefix: self.updateImagesWithoutUpdateOTASSID, message: wifi)
             self.sendMessageForSplit(prefix: self.updateImagesWithoutUpdateOTAPassword, message: passWord)
-            print(self.updateImagesWithoutUpdateOTASSID)
             self.sendMessageForSplit(prefix: self.updateImagesWithoutUpdateOTASSID, message: wifi)
             self.sendMessageForSplit(prefix: self.updateImagesWithoutUpdateOTAPassword, message: passWord)
         }

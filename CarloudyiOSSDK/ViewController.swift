@@ -9,15 +9,16 @@
 import UIKit
 import CoreLocation
 import CarloudyiOS
+import Popover
 
+// register your app and get your appId at betastore.carloudy.com
+fileprivate let AppID = "86kbwkvk"
 
-
-class ViewController: UIViewController, CarloudyLocationDelegate {
+class ViewController: UIViewController {
     
     let carloudyBLE = CarloudyBLE.shareInstance
     let carloudySpeech = CarloudySpeech()
     var carloudyLocation = CarloudyLocation(sendSpeed: true, sendAddress: true)
-    
     weak var timer_checkTextIfChanging : Timer?
     var timer_forBaseSiri_inNavigationController = Timer()  ///每0.5秒 检测说的什么
     var textReturnedFromSiri = ""
@@ -32,13 +33,95 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
     }
     
     @IBAction func startNewSessionAndCreateView(_ sender: Any) {
-        // register your app and get your appId at betastore.carloudy.com
-        carloudyBLE.startANewSession(appId: "qtr4e52i")
+        carloudyBLE.startANewSession(appId: AppID)
         carloudyBLE.createIDAndViewForCarloudyHud(textViewId: "1", labelTextSize: 32, postionX: 36, postionY: 36, width: 42, height: 00)
-        
+        carloudyBLE.createIDAndViewForCarloudyHud(textViewId: "2", labelTextSize: 32, postionX: 56, postionY: 56, width: 42, height: 00)
     }
     
     @IBAction func getWeatherButtonClicked(_ sender: Any) {
+        getWeather()
+    }
+    
+    @IBOutlet weak var textLabel: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
+    @IBAction func sendButtonClicked(_ sender: Any) {
+        carloudyBLE.sendMessage(textViewId: "1", message: textLabel.text!)
+                carloudyBLE.sendMessage(textViewId: "2", message: "321")
+        carloudyBLE.createPictureIDAndImageViewForCarloudyHUD(picID: "ad", postionX: 20, postionY: 20, width: 50, height: 50)
+    }
+    
+    @IBAction func gotoCarloudyClicked(_ sender: Any) {
+        carloudyBLE.toCarloudyApp()
+    }
+    
+    @IBOutlet weak var siriButton: UIButton!
+    @IBAction func siriButtonClicked(_ sender: Any) {
+        siriButtonClicked()
+    }
+    
+    @IBOutlet weak var sendSpeedAndAddress: UIButton!
+    @IBAction func sendSpeedAndAddressClicked(_ sender: Any) {
+        if sendSpeedAndAddress.titleLabel?.text != "sending"{
+            carloudyLocation.delegate = self
+            carloudyLocation.locationManager.requestAlwaysAuthorization()
+            carloudyLocation.locationManager.startUpdatingLocation()
+            carloudyLocation.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+            sendSpeedAndAddress.setTitle("sending", for: .normal)
+        }else{
+            sendSpeedAndAddress.setTitle("sendSpeedAndAddress", for: .normal)
+            carloudyLocation.locationManager.stopUpdatingLocation()
+        }
+    }
+    
+    @IBAction func pairHelpButton(_ sender: Any) {
+        let text = "First, you need to make sure SDK and Carloudy HUD are already paired.\n\nHOW?\nGo to Carloudy HUD Pair Screen and Choose iPhone Mode, then click this Pair button.\n\nHint: You only need to pair them once, the pair key will be automaticlly saved.\n\nFor help of pairing:\n1. https://gettingstarted.carloudy.com/ios-platform\n2. https://www.youtube.com/watch?v=jK-jlyjAfVw\n3. Check Carloudy iOS App Introduction/Setup page"
+        createPopOverView(startView: sender as! UIView, text: text, height: 400)
+    }
+    
+    @IBAction func newSessionButton(_ sender: Any) {
+        let text = "This button will send AppId to Carloudy HUD, and create a specfic textView on Carloudy HUD.\n\nMinimum staying alive timer for display session is 60 secs. Without receiving any new message, customized display will exit. After exit, session expires, user must restart a new session"
+        createPopOverView(startView: sender as! UIView, text: text, height: 220)
+    }
+    
+    @IBAction func getWeatherHelp(_ sender: Any) {
+        let text = "You can type some text or get the weather into the orange textLabel"
+        createPopOverView(startView: sender as! UIView, text: text, height: 100)
+    }
+    
+    @IBAction func sendHelpButton(_ sender: Any) {
+        let text = "This button will send the text of the orange textLabel to Carloudy HUD. \n\nThe text sent will be shown at the textView you created in Carloudy HUD."
+        createPopOverView(startView: sender as! UIView, text: text, height: 150)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        textLabel.delegate = self
+        self.title = "SDK Sample"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Images", style: .plain, target: self, action: #selector(updateImagesButtonClicked))
+    }
+    
+    @objc fileprivate func updateImagesButtonClicked(){
+        let updateVC =  UpdateImagesViewController()
+        navigationController?.pushViewController(updateVC, animated: true)
+    }
+    
+    fileprivate func createPopOverView(startView : UIView, text : String, height: Int){
+        let aView = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: CGFloat(height)))
+        aView.text = text
+        aView.numberOfLines = 0
+        aView.textColor = UIColor.darkGray
+        aView.adjustsFontSizeToFitWidth = true
+        let popover = Popover(options: nil, showHandler: nil, dismissHandler: nil)
+        popover.popoverType = .down
+        popover.show(aView, fromView: startView)
+    }
+}
+
+
+
+// MARK:- apicall
+extension ViewController{
+    fileprivate func getWeather(){
         let str = "http://api.openweathermap.org/data/2.5/weather?lat=41.889249&lon=-87.630182&APPID=76d9dff8a633f10f3c5944948d84bd8b"
         print(str)
         let urlstr = URL(string: str)
@@ -50,7 +133,7 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
         
         session.dataTask(with: urlstr!) { (data, response, error) in
             if error != nil{
-                print(error)
+                print(error!)
                 return
             }
             if let result = String.init(data: data!, encoding: String.Encoding.utf8){
@@ -72,47 +155,11 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
             }
             }.resume()
     }
-    
-    @IBOutlet weak var textLabel: UITextField!
-    
-    @IBOutlet weak var sendButton: UIButton!
-    
-    @IBAction func sendButtonClicked(_ sender: Any) {
-        carloudyBLE.sendMessage(textViewId: "1", message: textLabel.text!)
-        carloudyBLE.createPictureIDAndImageViewForCarloudyHUD(picID: "a6", postionX: 00, postionY: 00, width: 00, height: 00)
-    }
-    
-    @IBAction func gotoCarloudyClicked(_ sender: Any) {
+}
 
-        carloudyBLE.toCarloudyApp()
-    }
-    
-    @IBOutlet weak var siriButton: UIButton!
-    @IBAction func siriButtonClicked(_ sender: Any) {
-        siriButtonClicked()
-    }
-    
-    @IBOutlet weak var sendSpeedAndAddress: UIButton!
-    @IBAction func sendSpeedAndAddressClicked(_ sender: Any) {
-        if sendSpeedAndAddress.titleLabel?.text != "sending"{
-            
-            carloudyLocation.delegate = self
-            carloudyLocation.locationManager.requestAlwaysAuthorization()
-            carloudyLocation.locationManager.startUpdatingLocation()
-            sendSpeedAndAddress.setTitle("sending", for: .normal)
-        }else{
-            sendSpeedAndAddress.setTitle("sendSpeedAndAddress", for: .normal)
-            carloudyLocation.locationManager.stopUpdatingLocation()
-        }
-    }
-    @IBAction func updataImagesFromServerButtonClicked(_ sender: Any) {
-        carloudyBLE.alertViewToUpdateImagesFromServer()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
+
+// MARK:- CarloudyLocationDelegate
+extension ViewController: CarloudyLocationDelegate, UITextFieldDelegate{
     func carloudyLocation(speed: CLLocationSpeed) {
         carloudyBLE.sendMessage(textViewId: "1", message: String(speed), highPriority: true, coverTheFront: false)
     }
@@ -127,64 +174,12 @@ class ViewController: UIViewController, CarloudyLocationDelegate {
         print(country)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textLabel.resignFirstResponder()
+        return true
+    }
 }
 
 
-///do siri stuff
-extension ViewController{
-    
-    func siriButtonClicked(){
-        carloudySpeech.microphoneTapped()
-        self.createTimerForBaseSiri_checkText()
-        self.delay3Seconds_createTimer()
-        siriButton.setTitle("listening", for: .normal)
-        siriButton.setTitleColor(UIColor.red, for: .normal)
-        siriButton.isEnabled = false
-    }
-    
-    func siriButtonUNClicked(){
-        carloudySpeech.endMicroPhone()
-        siriButton.setTitle("end", for: .normal)
-        siriButton.isEnabled = true
-        timer_checkTextIfChanging?.invalidate()
-        timer_forBaseSiri_inNavigationController.invalidate()
-    }
-    
-    fileprivate func delay3Seconds_createTimer(){
-        let delayTime = DispatchTime.now() + Double(Int64(3 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
-        DispatchQueue.main.asyncAfter(deadline: delayTime) {
-            // 因为这里要延迟2秒。会出现已经说yes， 已经invalidate timer 然后进来 重新创建timer情况， 所以先判断audioengine isrunning
-            if self.carloudySpeech.audioEngine.isRunning == true{
-                self.createTimerForBaseSiri_checkiftextChanging()   // 延长3秒 在check 是否user 还在说
-            }
-        }
-    }
-    
-    fileprivate func createTimerForBaseSiri_checkiftextChanging(){
-        if timer_checkTextIfChanging == nil{
-            timer_checkTextIfChanging?.invalidate()
-            timer_checkTextIfChanging = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(checkTextIsChanging), userInfo: nil, repeats: true)
-        }
-    }
-    
-    fileprivate func createTimerForBaseSiri_checkText(){
-        timer_forBaseSiri_inNavigationController.invalidate()
-        timer_forBaseSiri_inNavigationController = Timer(timeInterval: 0.5, repeats: true, block: { [weak self](_) in
-            self?.textReturnedFromSiri = (self?.carloudySpeech.checkText().lowercased())!
-            self?.textLabel.text = self?.textReturnedFromSiri
-            if self?.textReturnedFromSiri != ""{
-                self?.createTimerForBaseSiri_checkiftextChanging()
-            }
-        })
-        RunLoop.current.add(timer_forBaseSiri_inNavigationController, forMode: .commonModes)
-    }
-    
-    @objc func checkTextIsChanging(){
-        guard carloudySpeech.checkTextChanging() == false else {return}
-        // 如果user 不说话了
-        siriButtonUNClicked() // 如果不说话了， 现在先销毁timer
-    }
-    
-}
 
 
