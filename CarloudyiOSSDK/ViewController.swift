@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sendButton: UIButton!
     @IBAction func sendButtonClicked(_ sender: Any) {
         carloudyBLE.sendMessage(textViewId: "1", message: textLabel.text!)
-                carloudyBLE.sendMessage(textViewId: "2", message: "321")
+        carloudyBLE.sendMessage(textViewId: "2", message: "321")
         carloudyBLE.createPictureIDAndImageViewForCarloudyHUD(picID: "ad", postionX: 20, postionY: 20, width: 50, height: 50)
     }
     
@@ -95,6 +95,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+}
+
+
+
+// MARK:- SetupUI
+extension ViewController{
+    fileprivate func setupUI(){
         textLabel.delegate = self
         self.title = "SDK Sample"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Images", style: .plain, target: self, action: #selector(updateImagesButtonClicked))
@@ -116,7 +125,6 @@ class ViewController: UIViewController {
         popover.show(aView, fromView: startView)
     }
 }
-
 
 
 // MARK:- apicall
